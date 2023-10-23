@@ -11,8 +11,8 @@ export const drawerMenu = [
         path: "/todo",
       },
       {
-        title: "Fetchlist",
-        path: "/fetchlist",
+        title: "Document Table",
+        path: "/document-table",
       },
       {
         title: "Create",
