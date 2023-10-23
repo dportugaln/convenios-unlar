@@ -9,8 +9,10 @@ import {
   Grid,
   TextField,
   Typography,
+  InputAdornment,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import SearchIcon from '@mui/icons-material/Search';
 
 const DocumentTable = () => {
   const [filters, setFilters] = useState({
@@ -22,38 +24,60 @@ const DocumentTable = () => {
     renovacion_automatica: '',
     id: '',
   });
+  const [searchText, setSearchText] = useState('');
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
     setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
   };
 
+  const handleSearch = (e) => {
+    setSearchText(e.target.value);
+  };
+
   const filteredData = jsonData.filter((item) => {
     return Object.keys(filters).every((key) => {
-      if (key === 'Renovacion automatica') {
-        // Filter for boolean value
-        const filterValue = filters[key].toLowerCase() === 'yes';
-        return item[key] === filterValue;
-      } else {
-        // Filter for other fields (non-boolean)
-        const filterValue = filters[key].toLowerCase();
-        const itemValue = String(item[key]).toLowerCase();
-        return itemValue.includes(filterValue);
-      }
+      const filterValue = filters[key].toLowerCase();
+      const itemValue = String(item[key]).toLowerCase();
+
+      return itemValue.includes(filterValue);
+    });
+  });
+
+  const searchedData = filteredData.filter((item) => {
+    return Object.values(item).some((itemValue) => {
+      const itemValueStr = String(itemValue).toLowerCase();
+      return itemValueStr.includes(searchText.toLowerCase());
     });
   });
 
   return (
     <div>
-      <h1>Document Table</h1>
+      <h1>Convenios</h1>
 
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Card>
             <CardContent>
+              <div style={{ display: 'flex', marginBottom: '1rem' }}>
+                <TextField
+                  label="Búsqueda"
+                  variant="outlined"
+                  fullWidth
+                  value={searchText}
+                  onChange={handleSearch}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <SearchIcon />
+                      </InputAdornment>
+                    ),
+                  }}
+                />
+              </div>
               <Accordion>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                  <Typography>Filters</Typography>
+                  <Typography>Filtros</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Grid container spacing={2}>
@@ -85,7 +109,7 @@ const DocumentTable = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredData.map((item) => (
+                  {searchedData.map((item) => (
                     <tr key={item.id}>
                       <td>{item.detalle}</td>
                       <td>{item.descripcion}</td>
