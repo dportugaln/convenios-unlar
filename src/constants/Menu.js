@@ -14,6 +14,10 @@ export const drawerMenu = [
         title: "Fetchlist",
         path: "/fetchlist",
       },
+      {
+        title: "Create",
+        path: "/create"
+      }
     ],
   },
 ];

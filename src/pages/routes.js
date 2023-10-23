@@ -4,9 +4,7 @@ import NotFound from "./layouts/NotFound";
 import Dashboard from "./dashboard/Dashboard";
 import Fetchlist from './fetchList/FetchList';
 import Todo from './toDo/ToDo';
-
-
-
+import Create from "./Create"
 
 const Routes = () => {
     return useRoutes([
@@ -16,16 +14,14 @@ const Routes = () => {
         children: [
           { path: "", element: <Dashboard /> },
           { path: "todo", element: <Todo /> },
-          { path: "fetchlist", element: <Fetchlist />}
+          { path: "fetchlist", element: <Fetchlist />},
+          { path: "Create", element: <Create />}
         ],
       },
       { path: "/404", element: <NotFound /> },
       { path: "*", element: <Navigate to="/404" replace /> },
     ]);
   };
-
-
-
 
 export default Routes;
 
