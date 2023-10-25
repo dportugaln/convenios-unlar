@@ -155,26 +155,33 @@ const DocumentTable = () => {
                   </Grid>
                 </AccordionDetails>
               </Accordion>
-              <table className="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Detalle</th>
-                    <th>Descripción</th>
-                    <th>Institución</th>
-                    <th>Fecha finalización</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {searchedData.map((item) => (
-                    <tr key={item.id} onClick={() => openDialog(item)}>
-                      <td>{item.detalle}</td>
-                      <td>{item.descripcion}</td>
-                      <td>{item.institucion}</td>
-                      <td>{item.fecha_finalizacion}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <table
+        className="table-bordered"
+        style={{ textAlign: 'left', border: '1px solid grey', borderRadius: '10px', width: '100%' }}
+      >
+        <thead>
+          <tr>
+            <th style={{ border: '1px solid grey', padding: '8px' }}>Detalle</th>
+            <th style={{ border: '1px solid grey', padding: '8px' }}>Descripción</th>
+            <th style={{ border: '1px solid grey', padding: '8px' }}>Institución</th>
+            <th style={{ border: '1px solid grey', padding: '8px' }}>Fecha finalización</th>
+          </tr>
+        </thead>
+        <tbody>
+          {searchedData.map((item) => (
+            <tr
+              key={item.id}
+              onClick={() => openDialog(item)}
+              style={{ border: '1px solid grey' }}
+            >
+              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.detalle}</td>
+              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.descripcion}</td>
+              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.institucion}</td>
+              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.fecha_finalizacion}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
               <Dialog open={dialogOpen} onClose={closeDialog}>
                 <DialogTitle>Details</DialogTitle>
                 <DialogContent>
