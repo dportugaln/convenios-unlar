@@ -10,6 +10,11 @@ import {
   TextField,
   Typography,
   InputAdornment,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Button,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
@@ -25,6 +30,8 @@ const DocumentTable = () => {
     id: '',
   });
   const [searchText, setSearchText] = useState('');
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
@@ -33,6 +40,20 @@ const DocumentTable = () => {
 
   const handleSearch = (e) => {
     setSearchText(e.target.value);
+  };
+
+  const openDialog = (item) => {
+    setSelectedItem(item);
+    setDialogOpen(true);
+  };
+
+  const closeDialog = () => {
+    setDialogOpen(false);
+    setSelectedItem(null);
+  };
+
+  const generateFormattedJSON = (item) => {
+    return JSON.stringify(item, null, 2);
   };
 
   const filteredData = jsonData.filter((item) => {
@@ -100,28 +121,35 @@ const DocumentTable = () => {
                 <thead>
                   <tr>
                     <th>Detalle</th>
-                    <th>Descripcion</th>
-                    <th>Fecha Firma</th>
-                    <th>Fecha Inicio</th>
-                    <th>Fecha Finalizacion</th>
-                    <th>Renovacion Automatica</th>
-                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Institución</th>
+                    <th>Fecha finalización</th>
                   </tr>
                 </thead>
                 <tbody>
                   {searchedData.map((item) => (
-                    <tr key={item.id}>
+                    <tr key={item.id} onClick={() => openDialog(item)}>
                       <td>{item.detalle}</td>
                       <td>{item.descripcion}</td>
-                      <td>{item.fecha_firma}</td>
-                      <td>{item.fecha_inicio}</td>
+                      <td>{item.institucion}</td>
                       <td>{item.fecha_finalizacion}</td>
-                      <td>{item.renovacion_automatica ? 'Yes' : 'No'}</td>
-                      <td>{item.id}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
+              <Dialog open={dialogOpen} onClose={closeDialog}>
+                <DialogTitle>Details</DialogTitle>
+                <DialogContent>
+                  {selectedItem && (
+                    <pre>{generateFormattedJSON(selectedItem)}</pre>
+                  )}
+                </DialogContent>
+                <DialogActions>
+                  <Button onClick={closeDialog} color="primary">
+                    Close
+                  </Button>
+                </DialogActions>
+              </Dialog>
             </CardContent>
           </Card>
         </Grid>
