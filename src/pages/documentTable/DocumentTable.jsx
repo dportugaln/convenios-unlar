@@ -52,10 +52,46 @@ const DocumentTable = () => {
     setSelectedItem(null);
   };
 
-  const generateFormattedJSON = (item) => {
-    return JSON.stringify(item, null, 2);
+  const formatTitle = (key) => {
+    const formattedKey = key
+      .split('_')
+      .map((word, index) => {
+        if (index === 0) {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        } else {
+          const prepositions = ['de', 'para', 'con', 'en', 'la', 'el', 'del'];
+          if (prepositions.includes(word)) {
+            return word;
+          }
+          return word.charAt(0).toLowerCase() + word.slice(1);
+        }
+      })
+      .join(' ');
+    return formattedKey;
   };
-
+  
+  const generatePropertyTitles = (item) => {
+    return (
+      <div>
+        {Object.keys(item).map((key) => {
+          if (key === 'renovacion_automatica' || (key === 'estado' && item[key] === 'Borrador')) {
+            return null;
+          }
+          return (
+            <div key={key}>
+              <Typography variant="h6" style={{ fontWeight: 'bold' }}>
+                {formatTitle(key)}
+              </Typography>
+              <Typography>
+                {typeof item[key] === 'object' ? item[key].nombre : item[key]}
+              </Typography>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+  
   const filteredData = jsonData.filter((item) => {
     return Object.keys(filters).every((key) => {
       const filterValue = filters[key].toLowerCase();
@@ -66,10 +102,12 @@ const DocumentTable = () => {
   });
 
   const searchedData = filteredData.filter((item) => {
-    return Object.values(item).some((itemValue) => {
-      const itemValueStr = String(itemValue).toLowerCase();
-      return itemValueStr.includes(searchText.toLowerCase());
-    });
+    return (
+      Object.values(item).some((itemValue) => {
+        const itemValueStr = String(itemValue).toLowerCase();
+        return itemValueStr.includes(searchText.toLowerCase());
+      }) && item.estado !== 'Borrador'
+    );
   });
 
   return (
@@ -140,9 +178,7 @@ const DocumentTable = () => {
               <Dialog open={dialogOpen} onClose={closeDialog}>
                 <DialogTitle>Details</DialogTitle>
                 <DialogContent>
-                  {selectedItem && (
-                    <pre>{generateFormattedJSON(selectedItem)}</pre>
-                  )}
+                  {selectedItem && generatePropertyTitles(selectedItem)}
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={closeDialog} color="primary">

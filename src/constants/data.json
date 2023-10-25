@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "ID": "1",
     "detalle": "Convenio de pasantías",
     "descripcion": "Convenio específico con empresa minera para pasantía de estudiantes avanzados",
     "fecha_firma": "05-05-2013",
@@ -12,708 +12,85 @@
     "objetivo": "Pasantía",
     "dependencia": "DACyTAPAU",
     "expediente": "00-00001/2012",
-    "contacto_local": {
-      "nombre": "Natalia Natalia",
-      "email": "natalianatalia@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "John Doe",
-      "email": "john@doe.com"
-    },
-    "estado": "vencido"
+    "estado": "Vencido"
   },
   {
-    "id": "2",
-    "detalle": "Convenio de investigación",
-    "descripcion": "Colaboración en proyectos de investigación científica con una institución académica extranjera",
-    "fecha_firma": "10-02-2018",
-    "fecha_inicio": "01-03-2018",
-    "fecha_finalizacion": "28-02-2023",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Universidad Internacional",
-    "objetivo": "Investigación conjunta",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00002/2018",
-    "contacto_local": {
-      "nombre": "Juan Pérez",
-      "email": "juanperez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Alice Smith",
-      "email": "alice@univ-intl.edu"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "3",
-    "detalle": "Convenio de intercambio estudiantil",
-    "descripcion": "Acuerdo de intercambio de estudiantes con una universidad extranjera",
-    "fecha_firma": "15-07-2015",
+    "ID": "2",
+    "detalle": "Convenio de investigación en biología",
+    "descripcion": "Colaboración en proyectos de investigación en biología marina",
+    "fecha_firma": "10-07-2015",
     "fecha_inicio": "01-09-2015",
-    "fecha_finalizacion": "30-06-2016",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Universidad Extranjera A",
-    "objetivo": "Intercambio estudiantil",
-    "dependencia": "DACHyE",
-    "expediente": "00-00003/2015",
-    "contacto_local": {
-      "nombre": "Laura Martínez",
-      "email": "lauramartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Emily Johnson",
-      "email": "emily@univ-foreign-a.edu"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "4",
-    "detalle": "Convenio de colaboración académica",
-    "descripcion": "Colaboración en la realización de eventos académicos y conferencias",
-    "fecha_firma": "20-11-2019",
-    "fecha_inicio": "01-01-2020",
-    "fecha_finalizacion": "31-12-2022",
+    "fecha_finalizacion": "31-08-2020",
     "renovacion_automatica": true,
     "tipo_convenio": "Marco",
-    "institucion": "Otra Universidad Nacional",
-    "objetivo": "Colaboración académica",
+    "institucion": "Instituto de Biología Marina A",
+    "objetivo": "Investigación en biología",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00004/2019",
-    "contacto_local": {
-      "nombre": "Carlos López",
-      "email": "carloslopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sarah Brown",
-      "email": "sarah@univ-national-b.edu"
-    },
-    "estado": "vigente"
+    "expediente": "00-00002/2015",
+    "estado": "Vigente"
   },
   {
-    "id": "5",
-    "detalle": "Convenio de movilidad docente",
-    "descripcion": "Intercambio de docentes para impartir clases en ambas instituciones",
-    "fecha_firma": "08-03-2017",
-    "fecha_inicio": "01-06-2017",
-    "fecha_finalizacion": "31-05-2018",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Universidad Extranjera B",
-    "objetivo": "Movilidad docente",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00005/2017",
-    "contacto_local": {
-      "nombre": "María García",
-      "email": "mariagarcia@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David White",
-      "email": "david@univ-foreign-b.edu"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "6",
-    "detalle": "Convenio de cooperación internacional",
-    "descripcion": "Promoción de la cooperación en áreas de interés común",
-    "fecha_firma": "10-09-2020",
-    "fecha_inicio": "01-01-2021",
-    "fecha_finalizacion": "31-12-2025",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Organización Internacional C",
-    "objetivo": "Cooperación internacional",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00006/2020",
-    "contacto_local": {
-      "nombre": "Pedro Rodríguez",
-      "email": "pedrorodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophia Lee",
-      "email": "sophia@intl-org-c.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "7",
-    "detalle": "Convenio de doble titulación",
-    "descripcion": "Acuerdo para que estudiantes obtengan dos títulos académicos",
-    "fecha_firma": "03-04-2016",
-    "fecha_inicio": "01-09-2016",
-    "fecha_finalizacion": "31-08-2021",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Universidad Extranjera D",
-    "objetivo": "Doble titulación",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00007/2016",
-    "contacto_local": {
-      "nombre": "Andrés Fernández",
-      "email": "andresfernandez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Emma Davis",
-      "email": "emma@univ-foreign-d.edu"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "8",
-    "detalle": "Convenio de cooperación deportiva",
-    "descripcion": "Promoción de actividades deportivas y competiciones",
-    "fecha_firma": "22-08-2017",
-    "fecha_inicio": "01-09-2017",
-    "fecha_finalizacion": "31-08-2022",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Club Deportivo X",
-    "objetivo": "Cooperación deportiva",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00008/2017",
-    "contacto_local": {
-      "nombre": "Luisa González",
-      "email": "luisagonzalez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Michael Johnson",
-      "email": "michael@club-x.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "9",
-    "detalle": "Convenio de movilidad estudiantil",
-    "descripcion": "Intercambio de estudiantes para cursar estudios en la institución socia",
-    "fecha_firma": "07-06-2019",
-    "fecha_inicio": "01-09-2019",
-    "fecha_finalizacion": "31-08-2024",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Otra Universidad Nacional B",
-    "objetivo": "Movilidad estudiantil",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00009/2019",
-    "contacto_local": {
-      "nombre": "Ana Rodríguez",
-      "email": "anarodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Daniel Brown",
-      "email": "daniel@univ-national-b.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "10",
-    "detalle": "Convenio de intercambio cultural",
-    "descripcion": "Promoción de actividades culturales y eventos conjuntos",
-    "fecha_firma": "17-12-2016",
-    "fecha_inicio": "01-01-2017",
-    "fecha_finalizacion": "31-12-2021",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Marco",
-    "institucion": "Centro Cultural Y",
-    "objetivo": "Intercambio cultural",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00010/2016",
-    "contacto_local": {
-      "nombre": "Martina Pérez",
-      "email": "martinaperez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Oliver Smith",
-      "email": "oliver@culture-y.org"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "11",
-    "detalle": "Convenio de capacitación",
-    "descripcion": "Programa de formación para el desarrollo de habilidades profesionales",
-    "fecha_firma": "04-09-2014",
-    "fecha_inicio": "01-10-2014",
-    "fecha_finalizacion": "30-09-2019",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Instituto de Capacitación Z",
-    "objetivo": "Capacitación profesional",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00011/2014",
-    "contacto_local": {
-      "nombre": "Sergio González",
-      "email": "sergiogonzalez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie White",
-      "email": "sophie@institute-z.com"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "12",
-    "detalle": "Convenio de intercambio científico",
-    "descripcion": "Intercambio de científicos para colaboración en investigaciones",
-    "fecha_firma": "12-03-2021",
-    "fecha_inicio": "01-06-2021",
-    "fecha_finalizacion": "31-05-2023",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Centro de Investigación A",
-    "objetivo": "Intercambio científico",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00012/2021",
-    "contacto_local": {
-      "nombre": "Lucía Martínez",
-      "email": "luciamartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Richard Johnson",
-      "email": "richard@research-center-a.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "13",
-    "detalle": "Convenio de intercambio de recursos",
-    "descripcion": "Intercambio de recursos educativos y bibliográficos",
-    "fecha_firma": "06-10-2018",
-    "fecha_inicio": "01-01-2019",
-    "fecha_finalizacion": "31-12-2024",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Biblioteca Nacional B",
-    "objetivo": "Intercambio de recursos",
-    "dependencia": "DACHyE",
-    "expediente": "00-00013/2018",
-    "contacto_local": {
-      "nombre": "Ricardo Sánchez",
-      "email": "ricardosanchez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Isabella Davis",
-      "email": "isabella@national-library-b.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "14",
-    "detalle": "Convenio de intercambio tecnológico",
-    "descripcion": "Intercambio de tecnología y desarrollo conjunto de proyectos",
-    "fecha_firma": "23-05-2017",
-    "fecha_inicio": "01-06-2017",
-    "fecha_finalizacion": "31-05-2022",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Empresa de Tecnología X",
-    "objetivo": "Intercambio tecnológico",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00014/2017",
-    "contacto_local": {
-      "nombre": "Gabriel Fernández",
-      "email": "gabrielfernandez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Emily Clark",
-      "email": "emily@tech-company-x.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "15",
-    "detalle": "Convenio de colaboración artística",
-    "descripcion": "Colaboración en actividades y eventos artísticos",
-    "fecha_firma": "10-11-2015",
-    "fecha_inicio": "01-01-2016",
-    "fecha_finalizacion": "31-12-2020",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Marco",
-    "institucion": "Centro de Arte Y",
-    "objetivo": "Colaboración artística",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00015/2015",
-    "contacto_local": {
-      "nombre": "Ana López",
-      "email": "analopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Oliver Martin",
-      "email": "oliver@art-center-y.org"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "16",
-    "detalle": "Convenio de cooperación ambiental",
-    "descripcion": "Colaboración en proyectos de conservación del medio ambiente",
-    "fecha_firma": "14-02-2019",
-    "fecha_inicio": "01-03-2019",
-    "fecha_finalizacion": "28-02-2024",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Organización Ambiental Z",
-    "objetivo": "Cooperación ambiental",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00016/2019",
-    "contacto_local": {
-      "nombre": "Carlos Rodríguez",
-      "email": "carlosrodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Martin",
-      "email": "sophie@env-org-z.org"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "17",
-    "detalle": "Convenio de intercambio de idiomas",
-    "descripcion": "Intercambio de estudiantes para aprender idiomas extranjeros",
-    "fecha_firma": "18-07-2016",
-    "fecha_inicio": "01-09-2016",
-    "fecha_finalizacion": "31-08-2021",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Instituto de Idiomas B",
-    "objetivo": "Intercambio de idiomas",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00017/2016",
-    "contacto_local": {
-      "nombre": "Luis Pérez",
-      "email": "luisperez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Emily Adams",
-      "email": "emily@language-inst-b.com"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "18",
-    "detalle": "Convenio de desarrollo tecnológico",
-    "descripcion": "Colaboración en el desarrollo de tecnología avanzada",
-    "fecha_firma": "29-03-2020",
-    "fecha_inicio": "01-04-2020",
-    "fecha_finalizacion": "31-03-2025",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Centro de Tecnología Avanzada C",
-    "objetivo": "Desarrollo tecnológico",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00018/2020",
-    "contacto_local": {
-      "nombre": "Laura González",
-      "email": "lauragonzalez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Wilson",
-      "email": "david@tech-center-c.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "19",
-    "detalle": "Convenio de intercambio de personal administrativo",
-    "descripcion": "Intercambio de personal administrativo para compartir buenas prácticas",
-    "fecha_firma": "11-08-2018",
-    "fecha_inicio": "01-09-2018",
-    "fecha_finalizacion": "31-08-2023",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Universidad Extranjera E",
-    "objetivo": "Intercambio de personal",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00019/2018",
-    "contacto_local": {
-      "nombre": "Andrea Martínez",
-      "email": "andreamartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophia Adams",
-      "email": "sophia@univ-foreign-e.edu"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "20",
-    "detalle": "Convenio de intercambio de experiencias educativas",
-    "descripcion": "Intercambio de mejores prácticas en educación",
-    "fecha_firma": "05-06-2017",
-    "fecha_inicio": "01-09-2017",
-    "fecha_finalizacion": "31-08-2022",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Otra Universidad Nacional C",
-    "objetivo": "Intercambio educativo",
-    "dependencia": "DACHyE",
-    "expediente": "00-00020/2017",
-    "contacto_local": {
-      "nombre": "Carlos Sánchez",
-      "email": "carlossanchez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Daniel Thomas",
-      "email": "daniel@univ-national-c.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "21",
-    "detalle": "Convenio de intercambio de estudiantes de posgrado",
-    "descripcion": "Intercambio de estudiantes para programas de posgrado",
-    "fecha_firma": "14-03-2019",
-    "fecha_inicio": "01-09-2019",
-    "fecha_finalizacion": "31-08-2024",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Universidad de Posgrado X",
-    "objetivo": "Intercambio de posgrado",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00021/2019",
-    "contacto_local": {
-      "nombre": "María Sánchez",
-      "email": "mariasanchez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Isaac Smith",
-      "email": "isaac@grad-univ-x.edu"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "22",
-    "detalle": "Convenio de colaboración en salud",
-    "descripcion": "Colaboración en proyectos de salud y atención médica",
-    "fecha_firma": "06-10-2016",
-    "fecha_inicio": "01-01-2017",
-    "fecha_finalizacion": "31-12-2021",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Marco",
-    "institucion": "Hospital Regional Z",
-    "objetivo": "Colaboración en salud",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00022/2016",
-    "contacto_local": {
-      "nombre": "Sofía Rodríguez",
-      "email": "sofiarodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Oliver Davis",
-      "email": "oliver@hospital-z.org"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "23",
-    "detalle": "Convenio de intercambio de datos",
-    "descripcion": "Intercambio de datos y colaboración en análisis de información",
-    "fecha_firma": "12-05-2018",
-    "fecha_inicio": "01-06-2018",
-    "fecha_finalizacion": "31-05-2023",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Centro de Datos A",
-    "objetivo": "Intercambio de datos",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00023/2018",
-    "contacto_local": {
-      "nombre": "Javier Pérez",
-      "email": "javierperez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophia Adams",
-      "email": "sophia@data-center-a.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "24",
-    "detalle": "Convenio de intercambio de artistas residentes",
-    "descripcion": "Intercambio de artistas residentes para programas de residencia artística",
-    "fecha_firma": "29-11-2017",
-    "fecha_inicio": "01-01-2018",
-    "fecha_finalizacion": "31-12-2022",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Marco",
-    "institucion": "Residencia de Artistas Y",
-    "objetivo": "Intercambio de artistas",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00024/2017",
-    "contacto_local": {
-      "nombre": "Luisa Martínez",
-      "email": "luisamartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Clark",
-      "email": "david@artist-residence-y.org"
-    },
-    "estado": "vencido"
-  },
-  {
-    "id": "25",
+    "ID": "3",
     "detalle": "Convenio de intercambio de estudiantes de medicina",
     "descripcion": "Intercambio de estudiantes de medicina para rotaciones clínicas",
-    "fecha_firma": "05-08-2019",
-    "fecha_inicio": "01-09-2019",
-    "fecha_finalizacion": "31-08-2024",
-    "renovacion_automatica": true,
+    "fecha_firma": "12-11-2016",
+    "fecha_inicio": "01-01-2017",
+    "fecha_finalizacion": "31-12-2021",
+    "renovacion_automatica": false,
     "tipo_convenio": "Específico",
-    "institucion": "Hospital Universitario A",
+    "institucion": "Facultad de Medicina A",
     "objetivo": "Intercambio de estudiantes de medicina",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00025/2019",
-    "contacto_local": {
-      "nombre": "Ana Sánchez",
-      "email": "anasanchez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Thomas",
-      "email": "sophie@univ-hospital-a.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00003/2016",
+    "estado": "Vencido"
   },
   {
-    "id": "26",
-    "detalle": "Convenio de colaboración en desarrollo sostenible",
-    "descripcion": "Colaboración en proyectos de desarrollo sostenible y medio ambiente",
-    "fecha_firma": "08-04-2017",
-    "fecha_inicio": "01-05-2017",
-    "fecha_finalizacion": "30-04-2022",
+    "ID": "4",
+    "detalle": "Convenio de colaboración en biotecnología",
+    "descripcion": "Colaboración en proyectos de investigación en biotecnología",
+    "fecha_firma": "28-09-2017",
+    "fecha_inicio": "01-10-2017",
+    "fecha_finalizacion": "30-09-2022",
     "renovacion_automatica": true,
     "tipo_convenio": "Marco",
-    "institucion": "Organización de Desarrollo Sostenible Z",
-    "objetivo": "Desarrollo sostenible",
+    "institucion": "Centro de Investigación en Biotecnología B",
+    "objetivo": "Colaboración en biotecnología",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00026/2017",
-    "contacto_local": {
-      "nombre": "Carlos Pérez",
-      "email": "carlosperez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Emily Johnson",
-      "email": "emily@sustainable-org-z.org"
-    },
-    "estado": "vigente"
+    "expediente": "00-00004/2017",
+    "estado": "Vigente"
   },
   {
-    "id": "27",
-    "detalle": "Convenio de intercambio de profesores visitantes",
-    "descripcion": "Intercambio de profesores visitantes para impartir clases y conferencias",
-    "fecha_firma": "19-06-2018",
+    "ID": "5",
+    "detalle": "Convenio de intercambio de estudiantes de ingeniería",
+    "descripcion": "Intercambio de estudiantes de ingeniería para pasantías y proyectos",
+    "fecha_firma": "15-08-2018",
     "fecha_inicio": "01-09-2018",
     "fecha_finalizacion": "31-08-2023",
     "renovacion_automatica": false,
     "tipo_convenio": "Específico",
-    "institucion": "Otra Universidad Nacional D",
-    "objetivo": "Intercambio de profesores visitantes",
+    "institucion": "Escuela de Ingeniería A",
+    "objetivo": "Intercambio de estudiantes de ingeniería",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00027/2018",
-    "contacto_local": {
-      "nombre": "Lucía Sánchez",
-      "email": "luciasanchez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Smith",
-      "email": "david@univ-national-d.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00005/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "28",
-    "detalle": "Convenio de intercambio de deportistas",
-    "descripcion": "Intercambio de deportistas para competir en eventos deportivos",
-    "fecha_firma": "21-09-2019",
-    "fecha_inicio": "01-01-2020",
-    "fecha_finalizacion": "31-12-2024",
+    "ID": "6",
+    "detalle": "Convenio de colaboración en medio ambiente",
+    "descripcion": "Colaboración en proyectos de conservación del medio ambiente",
+    "fecha_firma": "07-03-2019",
+    "fecha_inicio": "01-04-2019",
+    "fecha_finalizacion": "31-03-2024",
     "renovacion_automatica": true,
     "tipo_convenio": "Marco",
-    "institucion": "Club Deportivo Y",
-    "objetivo": "Intercambio de deportistas",
-    "dependencia": "DACEFyN",
-    "expediente": "00-00028/2019",
-    "contacto_local": {
-      "nombre": "Ana Rodríguez",
-      "email": "anarodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Oliver Adams",
-      "email": "oliver@club-y.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "29",
-    "detalle": "Convenio de intercambio de estudiantes de música",
-    "descripcion": "Intercambio de estudiantes de música para clases y actuaciones",
-    "fecha_firma": "15-08-2016",
-    "fecha_inicio": "01-09-2016",
-    "fecha_finalizacion": "31-08-2021",
-    "renovacion_automatica": false,
-    "tipo_convenio": "Específico",
-    "institucion": "Conservatorio de Música A",
-    "objetivo": "Intercambio de estudiantes de música",
+    "institucion": "Organización de Conservación del Medio Ambiente A",
+    "objetivo": "Colaboración en medio ambiente",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00029/2016",
-    "contacto_local": {
-      "nombre": "Luis Martínez",
-      "email": "luismartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Davis",
-      "email": "sophie@music-conservatory-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00006/2019",
+    "estado": "Borrador"
   },
   {
-    "id": "30",
-    "detalle": "Convenio de intercambio de profesionales de la salud",
-    "descripcion": "Intercambio de profesionales de la salud para colaboración médica",
-    "fecha_firma": "07-03-2018",
-    "fecha_inicio": "01-04-2018",
-    "fecha_finalizacion": "31-03-2023",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Centro de Salud B",
-    "objetivo": "Intercambio de profesionales de la salud",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00030/2018",
-    "contacto_local": {
-      "nombre": "Andrés Sánchez",
-      "email": "andressanchez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Adams",
-      "email": "david@health-center-b.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "31",
-    "detalle": "Convenio de intercambio de expertos en energías renovables",
-    "descripcion": "Intercambio de expertos en energías renovables para proyectos conjuntos",
-    "fecha_firma": "03-05-2017",
-    "fecha_inicio": "01-06-2017",
-    "fecha_finalizacion": "31-05-2022",
-    "renovacion_automatica": true,
-    "tipo_convenio": "Marco",
-    "institucion": "Instituto de Energías Renovables A",
-    "objetivo": "Intercambio de expertos en energías renovables",
-    "dependencia": "DACyTAPAU",
-    "expediente": "00-00031/2017",
-    "contacto_local": {
-      "nombre": "Lucía López",
-      "email": "lucialopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Smith",
-      "email": "sophie@renewable-inst-a.com"
-    },
-    "estado": "vigente"
-  },
-  {
-    "id": "32",
+    "ID": "7",
     "detalle": "Convenio de intercambio de estudiantes de arquitectura",
     "descripcion": "Intercambio de estudiantes de arquitectura para proyectos de diseño",
     "fecha_firma": "22-08-2016",
@@ -724,19 +101,11 @@
     "institucion": "Escuela de Arquitectura B",
     "objetivo": "Intercambio de estudiantes de arquitectura",
     "dependencia": "DACHyE",
-    "expediente": "00-00032/2016",
-    "contacto_local": {
-      "nombre": "Carlos Martínez",
-      "email": "carlosmartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Brown",
-      "email": "david@arch-school-b.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00007/2016",
+    "estado": "Vencido"
   },
   {
-    "id": "33",
+    "ID": "8",
     "detalle": "Convenio de colaboración en turismo",
     "descripcion": "Colaboración en proyectos turísticos y promoción de destinos",
     "fecha_firma": "01-12-2016",
@@ -747,19 +116,11 @@
     "institucion": "Agencia de Turismo A",
     "objetivo": "Colaboración en turismo",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00033/2016",
-    "contacto_local": {
-      "nombre": "Sofía López",
-      "email": "sofialopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Oliver Wilson",
-      "email": "oliver@tourism-agency-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00008/2016",
+    "estado": "Vencido"
   },
   {
-    "id": "34",
+    "ID": "9",
     "detalle": "Convenio de intercambio de estudiantes de derecho",
     "descripcion": "Intercambio de estudiantes de derecho para cursos y pasantías",
     "fecha_firma": "27-05-2017",
@@ -770,19 +131,11 @@
     "institucion": "Facultad de Derecho B",
     "objetivo": "Intercambio de estudiantes de derecho",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00034/2017",
-    "contacto_local": {
-      "nombre": "Ana López",
-      "email": "analopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Martin",
-      "email": "david@law-school-b.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00009/2017",
+    "estado": "Vigente"
   },
   {
-    "id": "35",
+    "ID": "10",
     "detalle": "Convenio de colaboración en ciencias sociales",
     "descripcion": "Colaboración en investigaciones y proyectos de ciencias sociales",
     "fecha_firma": "10-03-2018",
@@ -793,19 +146,11 @@
     "institucion": "Instituto de Ciencias Sociales A",
     "objetivo": "Colaboración en ciencias sociales",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00035/2018",
-    "contacto_local": {
-      "nombre": "Carlos Rodríguez",
-      "email": "carlosrodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Davis",
-      "email": "sophie@social-inst-a.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00010/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "36",
+    "ID": "11",
     "detalle": "Convenio de intercambio de estudiantes de ciencias de la salud",
     "descripcion": "Intercambio de estudiantes de ciencias de la salud para rotaciones clínicas",
     "fecha_firma": "18-09-2018",
@@ -816,19 +161,11 @@
     "institucion": "Facultad de Ciencias de la Salud B",
     "objetivo": "Intercambio de estudiantes de ciencias de la salud",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00036/2018",
-    "contacto_local": {
-      "nombre": "Laura López",
-      "email": "lauralopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Oliver Adams",
-      "email": "oliver@health-school-b.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00011/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "37",
+    "ID": "12",
     "detalle": "Convenio de colaboración en investigaciones agrícolas",
     "descripcion": "Colaboración en investigaciones agrícolas y proyectos agropecuarios",
     "fecha_firma": "13-11-2017",
@@ -839,19 +176,11 @@
     "institucion": "Centro de Investigación Agrícola Y",
     "objetivo": "Colaboración en investigaciones agrícolas",
     "dependencia": "DACEFyN",
-    "expediente": "00-00037/2017",
-    "contacto_local": {
-      "nombre": "Luis Martínez",
-      "email": "luismartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Smith",
-      "email": "david@agri-research-y.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00012/2017",
+    "estado": "Borrador"
   },
   {
-    "id": "38",
+    "ID": "13",
     "detalle": "Convenio de intercambio de estudiantes de ingeniería",
     "descripcion": "Intercambio de estudiantes de ingeniería para pasantías y proyectos",
     "fecha_firma": "16-07-2016",
@@ -862,19 +191,11 @@
     "institucion": "Facultad de Ingeniería A",
     "objetivo": "Intercambio de estudiantes de ingeniería",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00038/2016",
-    "contacto_local": {
-      "nombre": "Andrés López",
-      "email": "andreslopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophia Adams",
-      "email": "sophia@engineering-fac-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00013/2016",
+    "estado": "Vencido"
   },
   {
-    "id": "39",
+    "ID": "14",
     "detalle": "Convenio de colaboración en humanidades",
     "descripcion": "Colaboración en investigaciones y proyectos de humanidades",
     "fecha_firma": "09-12-2017",
@@ -885,19 +206,11 @@
     "institucion": "Instituto de Humanidades B",
     "objetivo": "Colaboración en humanidades",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00039/2017",
-    "contacto_local": {
-      "nombre": "Carlos López",
-      "email": "carloslopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Davis",
-      "email": "david@humanities-inst-b.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00014/2017",
+    "estado": "Borrador"
   },
   {
-    "id": "40",
+    "ID": "15",
     "detalle": "Convenio de intercambio de estudiantes de ciencias políticas",
     "descripcion": "Intercambio de estudiantes de ciencias políticas para estudios y pasantías",
     "fecha_firma": "24-06-2018",
@@ -908,19 +221,11 @@
     "institucion": "Facultad de Ciencias Políticas A",
     "objetivo": "Intercambio de estudiantes de ciencias políticas",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00040/2018",
-    "contacto_local": {
-      "nombre": "Laura Martínez",
-      "email": "lauramartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophia Clark",
-      "email": "sophia@politics-fac-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00015/2018",
+    "estado": "Vencido"
   },
   {
-    "id": "41",
+    "ID": "16",
     "detalle": "Convenio de colaboración en estudios internacionales",
     "descripcion": "Colaboración en investigaciones y programas de estudios internacionales",
     "fecha_firma": "04-08-2017",
@@ -931,19 +236,11 @@
     "institucion": "Instituto de Estudios Internacionales B",
     "objetivo": "Colaboración en estudios internacionales",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00041/2017",
-    "contacto_local": {
-      "nombre": "Andrés Martínez",
-      "email": "andresmartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Adams",
-      "email": "david@intl-studies-inst-b.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00016/2017",
+    "estado": "Vencido"
   },
   {
-    "id": "42",
+    "ID": "17",
     "detalle": "Convenio de intercambio de estudiantes de odontología",
     "descripcion": "Intercambio de estudiantes de odontología para prácticas clínicas",
     "fecha_firma": "12-12-2018",
@@ -954,19 +251,11 @@
     "institucion": "Facultad de Odontología A",
     "objetivo": "Intercambio de estudiantes de odontología",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00042/2018",
-    "contacto_local": {
-      "nombre": "Carlos Martínez",
-      "email": "carlosmartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Wilson",
-      "email": "sophie@dental-fac-a.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00017/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "43",
+    "ID": "18",
     "detalle": "Convenio de colaboración en ciencias de la educación",
     "descripcion": "Colaboración en proyectos de investigación y formación en educación",
     "fecha_firma": "08-10-2019",
@@ -977,19 +266,11 @@
     "institucion": "Instituto de Ciencias de la Educación C",
     "objetivo": "Colaboración en ciencias de la educación",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00043/2019",
-    "contacto_local": {
-      "nombre": "Laura Rodríguez",
-      "email": "laurarodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Smith",
-      "email": "david@edu-inst-c.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00018/2019",
+    "estado": "Vigente"
   },
   {
-    "id": "44",
+    "ID": "19",
     "detalle": "Convenio de intercambio de estudiantes de psicología",
     "descripcion": "Intercambio de estudiantes de psicología para pasantías y prácticas clínicas",
     "fecha_firma": "20-11-2018",
@@ -1000,19 +281,11 @@
     "institucion": "Facultad de Psicología B",
     "objetivo": "Intercambio de estudiantes de psicología",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00044/2018",
-    "contacto_local": {
-      "nombre": "Andrea López",
-      "email": "andrealopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Adams",
-      "email": "sophie@psychology-fac-b.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00019/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "45",
+    "ID": "20",
     "detalle": "Convenio de colaboración en investigación en ciencias de la computación",
     "descripcion": "Colaboración en proyectos de investigación en ciencias de la computación",
     "fecha_firma": "15-09-2017",
@@ -1023,19 +296,11 @@
     "institucion": "Instituto de Ciencias de la Computación A",
     "objetivo": "Colaboración en ciencias de la computación",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00045/2017",
-    "contacto_local": {
-      "nombre": "Carlos Rodríguez",
-      "email": "carlosrodriguez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Davis",
-      "email": "david@comp-sci-inst-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00020/2017",
+    "estado": "Vencido"
   },
   {
-    "id": "46",
+    "ID": "21",
     "detalle": "Convenio de intercambio de estudiantes de ciencias ambientales",
     "descripcion": "Intercambio de estudiantes de ciencias ambientales para proyectos y pasantías",
     "fecha_firma": "02-11-2018",
@@ -1046,19 +311,11 @@
     "institucion": "Facultad de Ciencias Ambientales B",
     "objetivo": "Intercambio de estudiantes de ciencias ambientales",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00046/2018",
-    "contacto_local": {
-      "nombre": "Lucía Martínez",
-      "email": "luciamartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophia Adams",
-      "email": "sophie@enviro-sci-fac-b.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00021/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "47",
+    "ID": "22",
     "detalle": "Convenio de colaboración en ingeniería informática",
     "descripcion": "Colaboración en proyectos de ingeniería informática y tecnologías de la información",
     "fecha_firma": "06-05-2017",
@@ -1069,19 +326,11 @@
     "institucion": "Facultad de Ingeniería Informática A",
     "objetivo": "Colaboración en ingeniería informática",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00047/2017",
-    "contacto_local": {
-      "nombre": "Carlos Martínez",
-      "email": "carlosmartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Johnson",
-      "email": "david@it-engineering-fac-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00022/2017",
+    "estado": "Vencido"
   },
   {
-    "id": "48",
+    "ID": "23",
     "detalle": "Convenio de intercambio de estudiantes de química",
     "descripcion": "Intercambio de estudiantes de química para investigaciones y prácticas de laboratorio",
     "fecha_firma": "17-12-2018",
@@ -1092,19 +341,11 @@
     "institucion": "Facultad de Química B",
     "objetivo": "Intercambio de estudiantes de química",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00048/2018",
-    "contacto_local": {
-      "nombre": "Luis Martínez",
-      "email": "luismartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Adams",
-      "email": "sophie@chemistry-fac-b.com"
-    },
-    "estado": "vigente"
+    "expediente": "00-00023/2018",
+    "estado": "Vigente"
   },
   {
-    "id": "49",
+    "ID": "24",
     "detalle": "Convenio de colaboración en estudios de negocios",
     "descripcion": "Colaboración en estudios de negocios, intercambio de estudiantes y programas conjuntos",
     "fecha_firma": "30-03-2017",
@@ -1115,19 +356,11 @@
     "institucion": "Escuela de Negocios A",
     "objetivo": "Colaboración en estudios de negocios",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00049/2017",
-    "contacto_local": {
-      "nombre": "Andrés López",
-      "email": "andreslopez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "David Smith",
-      "email": "david@business-school-a.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00024/2017",
+    "estado": "Vencido"
   },
   {
-    "id": "50",
+    "ID": "25",
     "detalle": "Convenio de intercambio de estudiantes de geología",
     "descripcion": "Intercambio de estudiantes de geología para estudios de campo y proyectos de investigación",
     "fecha_firma": "23-09-2017",
@@ -1138,15 +371,772 @@
     "institucion": "Facultad de Geología B",
     "objetivo": "Intercambio de estudiantes de geología",
     "dependencia": "DACyTAPAU",
-    "expediente": "00-00050/2017",
-    "contacto_local": {
-      "nombre": "Lucía Martínez",
-      "email": "luciamartinez@unlar.edu.ar"
-    },
-    "contacto_externo": {
-      "nombre": "Sophie Adams",
-      "email": "sophie@geology-fac-b.com"
-    },
-    "estado": "vencido"
+    "expediente": "00-00025/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "26",
+    "detalle": "Convenio de colaboración en biología",
+    "descripcion": "Colaboración en proyectos de investigación en biología marina",
+    "fecha_firma": "10-07-2015",
+    "fecha_inicio": "01-09-2015",
+    "fecha_finalizacion": "31-08-2020",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Biología Marina A",
+    "objetivo": "Investigación en biología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00026/2015",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "27",
+    "detalle": "Convenio de intercambio de estudiantes de medicina",
+    "descripcion": "Intercambio de estudiantes de medicina para rotaciones clínicas",
+    "fecha_firma": "12-11-2016",
+    "fecha_inicio": "01-01-2017",
+    "fecha_finalizacion": "31-12-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Medicina A",
+    "objetivo": "Intercambio de estudiantes de medicina",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00027/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "28",
+    "detalle": "Convenio de colaboración en biotecnología",
+    "descripcion": "Colaboración en proyectos de investigación en biotecnología",
+    "fecha_firma": "28-09-2017",
+    "fecha_inicio": "01-10-2017",
+    "fecha_finalizacion": "30-09-2022",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Centro de Investigación en Biotecnología B",
+    "objetivo": "Colaboración en biotecnología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00028/2017",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "29",
+    "detalle": "Convenio de intercambio de estudiantes de ingeniería",
+    "descripcion": "Intercambio de estudiantes de ingeniería para pasantías y proyectos",
+    "fecha_firma": "15-08-2018",
+    "fecha_inicio": "01-09-2018",
+    "fecha_finalizacion": "31-08-2023",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Escuela de Ingeniería A",
+    "objetivo": "Intercambio de estudiantes de ingeniería",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00029/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "30",
+    "detalle": "Convenio de colaboración en medio ambiente",
+    "descripcion": "Colaboración en proyectos de conservación del medio ambiente",
+    "fecha_firma": "07-03-2019",
+    "fecha_inicio": "01-04-2019",
+    "fecha_finalizacion": "31-03-2024",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Organización de Conservación del Medio Ambiente A",
+    "objetivo": "Colaboración en medio ambiente",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00030/2019",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "31",
+    "detalle": "Convenio de intercambio de estudiantes de arquitectura",
+    "descripcion": "Intercambio de estudiantes de arquitectura para proyectos de diseño",
+    "fecha_firma": "22-08-2016",
+    "fecha_inicio": "01-09-2016",
+    "fecha_finalizacion": "31-08-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Escuela de Arquitectura B",
+    "objetivo": "Intercambio de estudiantes de arquitectura",
+    "dependencia": "DACHyE",
+    "expediente": "00-00031/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "32",
+    "detalle": "Convenio de colaboración en turismo",
+    "descripcion": "Colaboración en proyectos turísticos y promoción de destinos",
+    "fecha_firma": "01-12-2016",
+    "fecha_inicio": "01-01-2017",
+    "fecha_finalizacion": "31-12-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Agencia de Turismo A",
+    "objetivo": "Colaboración en turismo",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00032/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "33",
+    "detalle": "Convenio de intercambio de estudiantes de derecho",
+    "descripcion": "Intercambio de estudiantes de derecho para cursos y pasantías",
+    "fecha_firma": "27-05-2017",
+    "fecha_inicio": "01-06-2017",
+    "fecha_finalizacion": "31-05-2022",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Derecho B",
+    "objetivo": "Intercambio de estudiantes de derecho",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00033/2017",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "34",
+    "detalle": "Convenio de colaboración en ciencias sociales",
+    "descripcion": "Colaboración en investigaciones y proyectos de ciencias sociales",
+    "fecha_firma": "10-03-2018",
+    "fecha_inicio": "01-04-2018",
+    "fecha_finalizacion": "31-03-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Ciencias Sociales A",
+    "objetivo": "Colaboración en ciencias sociales",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00034/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "35",
+    "detalle": "Convenio de intercambio de estudiantes de ciencias de la salud",
+    "descripcion": "Intercambio de estudiantes de ciencias de la salud para rotaciones clínicas",
+    "fecha_firma": "18-09-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Ciencias de la Salud B",
+    "objetivo": "Intercambio de estudiantes de ciencias de la salud",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00035/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "36",
+    "detalle": "Convenio de colaboración en investigaciones agrícolas",
+    "descripcion": "Colaboración en investigaciones agrícolas y proyectos agropecuarios",
+    "fecha_firma": "13-11-2017",
+    "fecha_inicio": "01-01-2018",
+    "fecha_finalizacion": "31-12-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Centro de Investigación Agrícola Y",
+    "objetivo": "Colaboración en investigaciones agrícolas",
+    "dependencia": "DACEFyN",
+    "expediente": "00-00036/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "37",
+    "detalle": "Convenio de intercambio de estudiantes de ingeniería",
+    "descripcion": "Intercambio de estudiantes de ingeniería para pasantías y proyectos",
+    "fecha_firma": "16-07-2016",
+    "fecha_inicio": "01-09-2016",
+    "fecha_finalizacion": "31-08-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Ingeniería A",
+    "objetivo": "Intercambio de estudiantes de ingeniería",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00037/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "38",
+    "detalle": "Convenio de colaboración en humanidades",
+    "descripcion": "Colaboración en investigaciones y proyectos de humanidades",
+    "fecha_firma": "09-12-2017",
+    "fecha_inicio": "01-01-2018",
+    "fecha_finalizacion": "31-12-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Humanidades B",
+    "objetivo": "Colaboración en humanidades",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00038/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "39",
+    "detalle": "Convenio de intercambio de estudiantes de ciencias políticas",
+    "descripcion": "Intercambio de estudiantes de ciencias políticas para estudios y pasantías",
+    "fecha_firma": "24-06-2018",
+    "fecha_inicio": "01-09-2018",
+    "fecha_finalizacion": "31-08-2023",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Ciencias Políticas A",
+    "objetivo": "Intercambio de estudiantes de ciencias políticas",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00039/2018",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "40",
+    "detalle": "Convenio de colaboración en estudios internacionales",
+    "descripcion": "Colaboración en investigaciones y programas de estudios internacionales",
+    "fecha_firma": "04-08-2017",
+    "fecha_inicio": "01-09-2017",
+    "fecha_finalizacion": "31-08-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Estudios Internacionales B",
+    "objetivo": "Colaboración en estudios internacionales",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00040/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "41",
+    "detalle": "Convenio de intercambio de estudiantes de odontología",
+    "descripcion": "Intercambio de estudiantes de odontología para prácticas clínicas",
+    "fecha_firma": "12-12-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Odontología A",
+    "objetivo": "Intercambio de estudiantes de odontología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00041/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "42",
+    "detalle": "Convenio de colaboración en ciencias de la educación",
+    "descripcion": "Colaboración en proyectos de investigación y formación en educación",
+    "fecha_firma": "08-10-2019",
+    "fecha_inicio": "01-11-2019",
+    "fecha_finalizacion": "31-10-2024",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Ciencias de la Educación C",
+    "objetivo": "Colaboración en ciencias de la educación",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00042/2019",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "43",
+    "detalle": "Convenio de intercambio de estudiantes de psicología",
+    "descripcion": "Intercambio de estudiantes de psicología para pasantías y prácticas clínicas",
+    "fecha_firma": "20-11-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Psicología B",
+    "objetivo": "Intercambio de estudiantes de psicología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00043/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "44",
+    "detalle": "Convenio de colaboración en investigación en ciencias de la computación",
+    "descripcion": "Colaboración en proyectos de investigación en ciencias de la computación",
+    "fecha_firma": "15-09-2017",
+    "fecha_inicio": "01-09-2017",
+    "fecha_finalizacion": "31-08-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Ciencias de la Computación A",
+    "objetivo": "Colaboración en ciencias de la computación",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00044/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "45",
+    "detalle": "Convenio de intercambio de estudiantes de ciencias ambientales",
+    "descripcion": "Intercambio de estudiantes de ciencias ambientales para proyectos y pasantías",
+    "fecha_firma": "02-11-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Ciencias Ambientales B",
+    "objetivo": "Intercambio de estudiantes de ciencias ambientales",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00045/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "46",
+    "detalle": "Convenio de colaboración en ingeniería informática",
+    "descripcion": "Colaboración en proyectos de ingeniería informática y tecnologías de la información",
+    "fecha_firma": "06-05-2017",
+    "fecha_inicio": "01-06-2017",
+    "fecha_finalizacion": "31-05-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Ingeniería Informática A",
+    "objetivo": "Colaboración en ingeniería informática",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00046/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "47",
+    "detalle": "Convenio de intercambio de estudiantes de química",
+    "descripcion": "Intercambio de estudiantes de química para investigaciones y prácticas de laboratorio",
+    "fecha_firma": "17-12-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Química B",
+    "objetivo": "Intercambio de estudiantes de química",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00047/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "48",
+    "detalle": "Convenio de colaboración en estudios de negocios",
+    "descripcion": "Colaboración en estudios de negocios, intercambio de estudiantes y programas conjuntos",
+    "fecha_firma": "30-03-2017",
+    "fecha_inicio": "01-04-2017",
+    "fecha_finalizacion": "31-03-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Escuela de Negocios A",
+    "objetivo": "Colaboración en estudios de negocios",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00048/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "49",
+    "detalle": "Convenio de intercambio de estudiantes de geología",
+    "descripcion": "Intercambio de estudiantes de geología para estudios de campo y proyectos de investigación",
+    "fecha_firma": "23-09-2017",
+    "fecha_inicio": "01-01-2018",
+    "fecha_finalizacion": "31-12-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Geología B",
+    "objetivo": "Intercambio de estudiantes de geología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00049/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "50",
+    "detalle": "Convenio de colaboración en biología",
+    "descripcion": "Colaboración en proyectos de investigación en biología marina",
+    "fecha_firma": "10-07-2015",
+    "fecha_inicio": "01-09-2015",
+    "fecha_finalizacion": "31-08-2020",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Biología Marina A",
+    "objetivo": "Investigación en biología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00050/2015",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "51",
+    "detalle": "Convenio de intercambio de estudiantes de medicina",
+    "descripcion": "Intercambio de estudiantes de medicina para rotaciones clínicas",
+    "fecha_firma": "12-11-2016",
+    "fecha_inicio": "01-01-2017",
+    "fecha_finalizacion": "31-12-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Medicina A",
+    "objetivo": "Intercambio de estudiantes de medicina",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00051/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "52",
+    "detalle": "Convenio de colaboración en biotecnología",
+    "descripcion": "Colaboración en proyectos de investigación en biotecnología",
+    "fecha_firma": "28-09-2017",
+    "fecha_inicio": "01-10-2017",
+    "fecha_finalizacion": "30-09-2022",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Centro de Investigación en Biotecnología B",
+    "objetivo": "Colaboración en biotecnología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00052/2017",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "53",
+    "detalle": "Convenio de intercambio de estudiantes de ingeniería",
+    "descripcion": "Intercambio de estudiantes de ingeniería para pasantías y proyectos",
+    "fecha_firma": "15-08-2018",
+    "fecha_inicio": "01-09-2018",
+    "fecha_finalizacion": "31-08-2023",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Escuela de Ingeniería A",
+    "objetivo": "Intercambio de estudiantes de ingeniería",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00053/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "54",
+    "detalle": "Convenio de colaboración en medio ambiente",
+    "descripcion": "Colaboración en proyectos de conservación del medio ambiente",
+    "fecha_firma": "07-03-2019",
+    "fecha_inicio": "01-04-2019",
+    "fecha_finalizacion": "31-03-2024",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Organización de Conservación del Medio Ambiente A",
+    "objetivo": "Colaboración en medio ambiente",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00054/2019",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "55",
+    "detalle": "Convenio de intercambio de estudiantes de arquitectura",
+    "descripcion": "Intercambio de estudiantes de arquitectura para proyectos de diseño",
+    "fecha_firma": "22-08-2016",
+    "fecha_inicio": "01-09-2016",
+    "fecha_finalizacion": "31-08-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Escuela de Arquitectura B",
+    "objetivo": "Intercambio de estudiantes de arquitectura",
+    "dependencia": "DACHyE",
+    "expediente": "00-00055/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "56",
+    "detalle": "Convenio de colaboración en turismo",
+    "descripcion": "Colaboración en proyectos turísticos y promoción de destinos",
+    "fecha_firma": "01-12-2016",
+    "fecha_inicio": "01-01-2017",
+    "fecha_finalizacion": "31-12-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Agencia de Turismo A",
+    "objetivo": "Colaboración en turismo",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00056/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "57",
+    "detalle": "Convenio de intercambio de estudiantes de derecho",
+    "descripcion": "Intercambio de estudiantes de derecho para cursos y pasantías",
+    "fecha_firma": "27-05-2017",
+    "fecha_inicio": "01-06-2017",
+    "fecha_finalizacion": "31-05-2022",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Derecho B",
+    "objetivo": "Intercambio de estudiantes de derecho",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00057/2017",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "58",
+    "detalle": "Convenio de colaboración en ciencias sociales",
+    "descripcion": "Colaboración en investigaciones y proyectos de ciencias sociales",
+    "fecha_firma": "10-03-2018",
+    "fecha_inicio": "01-04-2018",
+    "fecha_finalizacion": "31-03-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Ciencias Sociales A",
+    "objetivo": "Colaboración en ciencias sociales",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00058/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "59",
+    "detalle": "Convenio de intercambio de estudiantes de ciencias de la salud",
+    "descripcion": "Intercambio de estudiantes de ciencias de la salud para rotaciones clínicas",
+    "fecha_firma": "18-09-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Ciencias de la Salud B",
+    "objetivo": "Intercambio de estudiantes de ciencias de la salud",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00059/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "60",
+    "detalle": "Convenio de colaboración en investigaciones agrícolas",
+    "descripcion": "Colaboración en investigaciones agrícolas y proyectos agropecuarios",
+    "fecha_firma": "13-11-2017",
+    "fecha_inicio": "01-01-2018",
+    "fecha_finalizacion": "31-12-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Centro de Investigación Agrícola Y",
+    "objetivo": "Colaboración en investigaciones agrícolas",
+    "dependencia": "DACEFyN",
+    "expediente": "00-00060/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "61",
+    "detalle": "Convenio de intercambio de estudiantes de ingeniería",
+    "descripcion": "Intercambio de estudiantes de ingeniería foro el",
+    "fecha_firma": "16-07-2016",
+    "fecha_inicio": "01-09-2016",
+    "fecha_finalizacion": "31-08-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Ingeniería A",
+    "objetivo": "Intercambio de estudiantes de ingeniería",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00061/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "62",
+    "detalle": "Convenio de colaboración en humanidades",
+    "descripcion": "Colaboración en investigaciones y proyectos de humanidades",
+    "fecha_firma": "09-12-2017",
+    "fecha_inicio": "01-01-2018",
+    "fecha_finalizacion": "31-12-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Humanidades B",
+    "objetivo": "Colaboración en humanidades",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00062/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "63",
+    "detalle": "Convenio de intercambio de estudiantes de ciencias políticas",
+    "descripcion": "Intercambio de estudiantes de ciencias políticas para estudios y pasantías",
+    "fecha_firma": "24-06-2018",
+    "fecha_inicio": "01-09-2018",
+    "fecha_finalizacion": "31-08-2023",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Ciencias Políticas A",
+    "objetivo": "Intercambio de estudiantes de ciencias políticas",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00063/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "64",
+    "detalle": "Convenio de colaboración en estudios internacionales",
+    "descripcion": "Colaboración en investigaciones y programas de estudios internacionales",
+    "fecha_firma": "04-08-2017",
+    "fecha_inicio": "01-09-2017",
+    "fecha_finalizacion": "31-08-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Estudios Internacionales B",
+    "objetivo": "Colaboración en estudios internacionales",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00064/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "65",
+    "detalle": "Convenio de intercambio de estudiantes de odontología",
+    "descripcion": "Intercambio de estudiantes de odontología para prácticas clínicas",
+    "fecha_firma": "12-12-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Odontología A",
+    "objetivo": "Intercambio de estudiantes de odontología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00065/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "66",
+    "detalle": "Convenio de colaboración en ciencias de la educación",
+    "descripcion": "Colaboración en proyectos de investigación y formación en educación",
+    "fecha_firma": "08-10-2019",
+    "fecha_inicio": "01-11-2019",
+    "fecha_finalizacion": "31-10-2024",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Ciencias de la Educación C",
+    "objetivo": "Colaboración en ciencias de la educación",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00066/2019",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "67",
+    "detalle": "Convenio de intercambio de estudiantes de psicología",
+    "descripcion": "Intercambio de estudiantes de psicología para pasantías y prácticas clínicas",
+    "fecha_firma": "20-11-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Psicología B",
+    "objetivo": "Intercambio de estudiantes de psicología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00067/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "68",
+    "detalle": "Convenio de colaboración en investigación en ciencias de la computación",
+    "descripcion": "Colaboración en proyectos de investigación en ciencias de la computación",
+    "fecha_firma": "15-09-2017",
+    "fecha_inicio": "01-09-2017",
+    "fecha_finalizacion": "31-08-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Ciencias de la Computación A",
+    "objetivo": "Colaboración en ciencias de la computación",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00068/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "69",
+    "detalle": "Convenio de intercambio de estudiantes de ciencias ambientales",
+    "descripcion": "Intercambio de estudiantes de ciencias ambientales para proyectos y pasantías",
+    "fecha_firma": "02-11-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Ciencias Ambientales B",
+    "objetivo": "Intercambio de estudiantes de ciencias ambientales",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00069/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "70",
+    "detalle": "Convenio de colaboración en ingeniería informática",
+    "descripcion": "Colaboración en proyectos de ingeniería informática y tecnologías de la información",
+    "fecha_firma": "06-05-2017",
+    "fecha_inicio": "01-06-2017",
+    "fecha_finalizacion": "31-05-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Ingeniería Informática A",
+    "objetivo": "Colaboración en ingeniería informática",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00070/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "71",
+    "detalle": "Convenio de intercambio de estudiantes de química",
+    "descripcion": "Intercambio de estudiantes de química para investigaciones y prácticas de laboratorio",
+    "fecha_firma": "17-12-2018",
+    "fecha_inicio": "01-01-2019",
+    "fecha_finalizacion": "31-12-2023",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Química B",
+    "objetivo": "Intercambio de estudiantes de química",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00071/2018",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "72",
+    "detalle": "Convenio de colaboración en estudios de negocios",
+    "descripcion": "Colaboración en estudios de negocios, intercambio de estudiantes y programas conjuntos",
+    "fecha_firma": "30-03-2017",
+    "fecha_inicio": "01-04-2017",
+    "fecha_finalizacion": "31-03-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Escuela de Negocios A",
+    "objetivo": "Colaboración en estudios de negocios",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00072/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "73",
+    "detalle": "Convenio de intercambio de estudiantes de geología",
+    "descripcion": "Intercambio de estudiantes de geología para estudios de campo y proyectos de investigación",
+    "fecha_firma": "23-09-2017",
+    "fecha_inicio": "01-01-2018",
+    "fecha_finalizacion": "31-12-2022",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Marco",
+    "institucion": "Facultad de Geología B",
+    "objetivo": "Intercambio de estudiantes de geología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00073/2017",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "74",
+    "detalle": "Convenio de colaboración en biología",
+    "descripcion": "Colaboración en proyectos de investigación en biología marina",
+    "fecha_firma": "10-07-2015",
+    "fecha_inicio": "01-09-2015",
+    "fecha_finalizacion": "31-08-2020",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Instituto de Biología Marina A",
+    "objetivo": "Investigación en biología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00074/2015",
+    "estado": "Vigente"
+  },
+  {
+    "ID": "75",
+    "detalle": "Convenio de intercambio de estudiantes de medicina",
+    "descripcion": "Intercambio de estudiantes de medicina para rotaciones clínicas",
+    "fecha_firma": "12-11-2016",
+    "fecha_inicio": "01-01-2017",
+    "fecha_finalizacion": "31-12-2021",
+    "renovacion_automatica": false,
+    "tipo_convenio": "Específico",
+    "institucion": "Facultad de Medicina A",
+    "objetivo": "Intercambio de estudiantes de medicina",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00075/2016",
+    "estado": "Vencido"
+  },
+  {
+    "ID": "76",
+    "detalle": "Convenio de colaboración en biotecnología",
+    "descripcion": "Colaboración en proyectos de investigación en biotecnología",
+    "fecha_firma": "28-09-2017",
+    "fecha_inicio": "01-10-2017",
+    "fecha_finalizacion": "30-09-2022",
+    "renovacion_automatica": true,
+    "tipo_convenio": "Marco",
+    "institucion": "Centro de Investigación en Biotecnología B",
+    "objetivo": "Colaboración en biotecnología",
+    "dependencia": "DACyTAPAU",
+    "expediente": "00-00076/2017",
+    "estado": "Vigente"
   }
 ]
