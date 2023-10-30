@@ -16,7 +16,7 @@ export const drawerMenu = [
       },
       {
         title: "Create",
-        path: "/create"
+        path: "/create-user-form"
       }
     ],
   },

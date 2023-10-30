@@ -4,8 +4,8 @@ import NotFound from "./layouts/NotFound";
 import Dashboard from "./dashboard/Dashboard";
 import Fetchlist from './documentTable/DocumentTable';
 import Todo from './toDo/ToDo';
-import Create from "./Create"
 import DocumentTable from './documentTable/DocumentTable';
+import CreateUserForm from './Create';
 
 const Routes = () => {
     return useRoutes([
@@ -16,7 +16,7 @@ const Routes = () => {
           { path: "", element: <Dashboard /> },
           { path: "todo", element: <Todo /> },
           { path: "document-table", element: <DocumentTable />},
-          { path: "Create", element: <Create />}
+          { path: "create-user-form", element: <CreateUserForm />}
         ],
       },
       { path: "/404", element: <NotFound /> },
