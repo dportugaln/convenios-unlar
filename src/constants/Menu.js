@@ -3,9 +3,7 @@ export const drawerMenu = [
     title: "Inicio",
     path: "/",
   },
-  {
-    title: "Pages",
-    children: [
+  
       {
         title: "To do",
         path: "/todo",
@@ -18,9 +16,7 @@ export const drawerMenu = [
         title: "Create",
         path: "/create-user-form"
       }
-    ],
-  },
-];
+    ];
 
 export const popMenu = [
   {

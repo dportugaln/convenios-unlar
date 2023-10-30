@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import jsonData from '../../constants/data.json';
+import '../../App.css';
 import {
   Accordion,
   AccordionDetails,
@@ -15,6 +16,7 @@ import {
   DialogContent,
   DialogActions,
   Button,
+  Divider,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
@@ -155,33 +157,41 @@ const DocumentTable = () => {
                   </Grid>
                 </AccordionDetails>
               </Accordion>
-              <table
-        className="table-bordered"
-        style={{ textAlign: 'left', border: '1px solid grey', borderRadius: '10px', width: '100%' }}
-      >
-        <thead>
+              <table className="table-borderBottomed" style={{ textAlign: 'left' }}>
+  <thead>
+    <tr>
+      <th>Detalle</th>
+      <th>Descripción</th>
+      <th>Institución</th>
+      <th>Fecha finalización</th>
+    </tr>
+    <tr>
+      <th colSpan="4">
+        <Divider />
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {searchedData.map((item, index) => (
+      <React.Fragment key={item.id}>
+        <tr onClick={() => openDialog(item)}>
+          <td>{item.detalle}</td>
+          <td>{item.descripcion}</td>
+          <td>{item.institucion}</td>
+          <td>{item.fecha_finalizacion}</td>
+        </tr>
+        {index < searchedData.length - 1 && (
           <tr>
-            <th style={{ border: '1px solid grey', padding: '8px' }}>Detalle</th>
-            <th style={{ border: '1px solid grey', padding: '8px' }}>Descripción</th>
-            <th style={{ border: '1px solid grey', padding: '8px' }}>Institución</th>
-            <th style={{ border: '1px solid grey', padding: '8px' }}>Fecha finalización</th>
+            <td colSpan="4">
+              <Divider />
+            </td>
           </tr>
-        </thead>
-        <tbody>
-          {searchedData.map((item) => (
-            <tr
-              key={item.id}
-              onClick={() => openDialog(item)}
-              style={{ border: '1px solid grey' }}
-            >
-              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.detalle}</td>
-              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.descripcion}</td>
-              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.institucion}</td>
-              <td style={{ border: '1px solid grey', padding: '8px' }}>{item.fecha_finalizacion}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+        )}
+      </React.Fragment>
+    ))}
+  </tbody>
+</table>
+
               <Dialog open={dialogOpen} onClose={closeDialog}>
                 <DialogTitle>Details</DialogTitle>
                 <DialogContent>

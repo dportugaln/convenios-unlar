@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Grid, Paper, Card, CardHeader, CardContent, TextField, Button, Stack, Typography, Checkbox } from "@mui/material";
+import '../App.css'
 
 class CreateUserForm extends Component {
   constructor(props) {
@@ -29,94 +31,101 @@ class CreateUserForm extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Formulario de Creación de Usuario</h2>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label>Nombre Completo:</label>
-            <input
-              type="text"
-              name="nombreCompleto"
-              value={this.state.nombreCompleto}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>DNI:</label>
-            <input
-              type="text"
-              name="dni"
-              value={this.state.dni}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>Cargo:</label>
-            <input
-              type="text"
-              name="cargo"
-              value={this.state.cargo}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>Dependencia:</label>
-            <input
-              type="text"
-              name="dependencia"
-              value={this.state.dependencia}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>Res. N°:</label>
-            <input
-              type="text"
-              name="resolucionNumero"
-              value={this.state.resolucionNumero}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>Correo Electrónico:</label>
-            <input
-              type="email"
-              name="correoElectronico"
-              value={this.state.correoElectronico}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>Nombre del Personal Autorizado:</label>
-            <input
-              type="text"
-              name="nombrePersonalAutorizado"
-              value={this.state.nombrePersonalAutorizado}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>DNI del Personal Autorizado:</label>
-            <input
-              type="text"
-              name="dniPersonalAutorizado"
-              value={this.state.dniPersonalAutorizado}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <div>
-            <label>Contacto del Personal Autorizado:</label>
-            <input
-              type="text"
-              name="contactoPersonalAutorizado"
-              value={this.state.contactoPersonalAutorizado}
-              onChange={this.handleInputChange}
-            />
-          </div>
-          <button type="submit">Crear Usuario</button>
-        </form>
-      </div>
+      <Card>
+                  <CardHeader title="Formulatio de solicitud de usuario" />
+
+        
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        
+          <form onSubmit={this.handleSubmit}>
+            <div className="form-group">
+              <label>Nombre completo:</label>
+              <input
+                type="text"
+                name="nombreCompleto"
+                value={this.state.nombreCompleto}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>DNI:</label>
+              <input
+                type="text"
+                name="dni"
+                value={this.state.dni}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>Cargo:</label>
+              <input
+                type="text"
+                name="cargo"
+                value={this.state.cargo}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>Dependencia:</label>
+              <input
+                type="text"
+                name="dependencia"
+                value={this.state.dependencia}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>Res. N°:</label>
+              <input
+                type="text"
+                name="resolucionNumero"
+                value={this.state.resolucionNumero}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>Correo electrónico:</label>
+              <input
+                type="email"
+                name="correoElectronico"
+                value={this.state.correoElectronico}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>Nombre del personal autorizado:</label>
+              <input
+                type="text"
+                name="nombrePersonalAutorizado"
+                value={this.state.nombrePersonalAutorizado}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>DNI del personal autorizado:</label>
+              <input
+                type="text"
+                name="dniPersonalAutorizado"
+                value={this.state.dniPersonalAutorizado}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <div className="form-group">
+              <label>Contacto del personal autorizado:</label>
+              <input
+                type="text"
+                name="contactoPersonalAutorizado"
+                value={this.state.contactoPersonalAutorizado}
+                onChange={this.handleInputChange}
+              />
+            </div>
+            <button type="submit">Crear usuario</button>
+          </form>
+        </div>
+      
+      </Card>
     );
   }
 }
+
 export default CreateUserForm;
