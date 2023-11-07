@@ -2,7 +2,6 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import DashboardLayout from "./layouts/DashboardLayout"; 
 import NotFound from "./layouts/NotFound";
 import Dashboard from "./dashboard/Dashboard";
-import Fetchlist from './documentTable/DocumentTable';
 import Todo from './toDo/ToDo';
 import DocumentTable from './documentTable/DocumentTable';
 import CreateUserForm from './Create';

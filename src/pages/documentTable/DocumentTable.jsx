@@ -17,6 +17,7 @@ import {
   DialogActions,
   Button,
   Divider,
+  Slide,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
@@ -112,11 +113,15 @@ const DocumentTable = () => {
     );
   });
 
+  const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+  });
+
   return (
     <div>
-      <h1>Convenios</h1>
+      <h1 style={{color: 'white',fontWeight: 'bold', textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",}}>Convenios</h1>
 
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className='animated-container'>
         <Grid item xs={12}>
           <Card>
             <CardContent>
@@ -193,6 +198,7 @@ const DocumentTable = () => {
 </table>
 
               <Dialog open={dialogOpen} onClose={closeDialog}>
+                
                 <DialogTitle>Details</DialogTitle>
                 <DialogContent>
                   {selectedItem && generatePropertyTitles(selectedItem)}

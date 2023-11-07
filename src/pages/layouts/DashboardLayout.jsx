@@ -23,9 +23,9 @@ import { drawerMenu, popMenu } from '../../constants/Menu'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import EscudoImg from '../../assets/images/escudo.png'
+import UnlarImg from '../../assets/images/UNLaR.jpg'
 
-const drawerWidth = 240;
+/* const drawerWidth = 240;
 
 const MenuItem = ({ item }) => {
   const navigate = useNavigate()
@@ -170,7 +170,7 @@ const SideMenu = ({ open, onClose }) => {
     </Box>
   )
 }
-
+ */
 const DashboardLayout = () => {
   const [open, setOpen] = useState(false);
 
@@ -181,37 +181,43 @@ const DashboardLayout = () => {
           pr: '24px',
         }}
         >
-          <Button sx={{ color: "#FFF" }} onClick={() => setOpen(true)}>
+{/*           <Button sx={{ color: "#FFF" }} onClick={() => setOpen(true)}>
             <MenuIcon />
-          </Button>
+          </Button> */}
 
-          <SideMenu open={open} onClose={() => setOpen(false)} />
-          <img src={EscudoImg} style={{ maxWidth: '40px' }} alt="Escudo" />
+          {/* <SideMenu open={open} onClose={() => setOpen(false)} /> */}
 
-          <Typography
-            component="h1" variant="h6"
-            color="inherit" noWrap
-            sx={{ flexGrow: 1 }}
-          >
-            Sistema de gestión convenios - UNLaR
-          </Typography>
-          <IconButton
+          <RouterLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              noWrap
+              sx={{ flexGrow: 1 }}
+            >
+              Sistema de gestión convenios - UNLaR
+            </Typography>
+          </RouterLink>
+{/*           <IconButton
             size="small"
             sx={{ ml: 2 }}
           >
             <PopMenu />
-          </IconButton>
+          </IconButton> */}
         </Toolbar>
       </AppBar>
 
-
       <Box
-        component="main" sx={{
+        component="main"
+        sx={{
+          background: `url(${UnlarImg}) center/cover fixed no-repeat`,
           backgroundColor: (theme) =>
             theme.palette.mode === 'light'
               ? theme.palette.grey[100]
-              : theme.palette.grey[900], flexGrow: 1,
-          height: '100vh', overflow: 'auto',
+              : theme.palette.grey[900],
+          flexGrow: 1,
+          height: '100vh',
+          overflow: 'auto',
         }}
       >
         <Toolbar />
@@ -219,13 +225,8 @@ const DashboardLayout = () => {
           <Outlet />
         </Container>
       </Box>
-
     </Box>
   )
-
 }
-
-
-
 
 export default DashboardLayout;

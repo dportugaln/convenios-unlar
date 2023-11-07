@@ -1,18 +1,25 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Grid, Paper, Box, Card, CardContent, Typography } from '@mui/material';
-import ToDoImg from '../../assets/images/todo.png';
-import FetchlistImg from '../../assets/images/fetchlist.png';
+import { Grid, Card, CardContent, Typography, Divider } from '@mui/material';
 import { appSelector } from "../../redux/AppRedux";
 
-const Dashboard = () => {
+import '../../App.css'; // Import a CSS file for your animations
 
-    const redirectToTodo = () => {
-        window.location.href = "/todo";
+const headingStyle = {
+    textAlign: "center",
+    color: "white",
+    marginTop: "10px", // Adjust the top margin to center vertically
+    fontWeight: 'bold',
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+};
+
+const Dashboard = () => {
+    const redirectToUNLaR = () => {
+        window.location.href = "https://www.unlar.edu.ar";
     };
 
     const redirectToFetchlist = () => {
-        window.location.href = "/fetchlist";
+        window.location.href = "/document-table";
     };
 
     const todoList = useSelector(appSelector.todo);
@@ -21,15 +28,33 @@ const Dashboard = () => {
     const pendingTasks = todoList.length - completedTasks;
 
     return (
-        <Grid container spacing={3}>
+        <Grid container spacing={10} className="animated-container">
+            {/* Heading */}
             <Grid item xs={12}>
-                <Paper sx={{ p: 2 }}>
-                    <Box>
-                        Dashboard
-                    </Box>
-                </Paper>
+            <Typography variant="h2" gutterBottom style={headingStyle}>
+                    Gestión de Convenios
+                </Typography>
+                <Divider style={{ backgroundColor: "white", height: 2, margin:"0 auto" }}/>
+                <Typography variant="h4" style={headingStyle}>
+                    Universidad Nacional de La Rioja
+                </Typography>
             </Grid>
-            <Grid item xs={6}>
+
+            <Grid item xs={12}>
+                <Card className="animated-card">
+                    <CardContent>
+                        <Typography variant="h5" gutterBottom>
+                            Bienvenidos al Sistema de Gestión de Convenios de la UNLaR
+                        </Typography>
+                        <Typography>
+                        Esta plataforma está diseñada para promover la transparencia institucional y brindar acceso a valiosas
+                        oportunidades. Aquí podrá explorar y conocer los convenios públicamente, fortaleciendo así nuestra comunidad universitaria.
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
+
+{/*             <Grid item xs={6} className="animated-grid">
                 <Card style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
                     <CardContent style={{ display: 'flex', alignItems: 'center' }}>
                         <Typography variant="h6" style={{ marginRight: '10px' }}>
@@ -38,7 +63,7 @@ const Dashboard = () => {
                     </CardContent>
                 </Card>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} className="animated-grid">
                 <Card style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
                     <CardContent style={{ display: 'flex', alignItems: 'center' }}>
                         <Typography variant="h6" style={{ marginRight: '10px' }}>
@@ -46,24 +71,22 @@ const Dashboard = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-            </Grid>
-            <Grid item xs={6}>
-                <Card onClick={redirectToTodo} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
-                    <CardContent style={{ display: 'flex', alignItems: 'center' }}>
-                        <Typography variant="h6" style={{ marginRight: '10px' }}>
-                            Todo
-                        </Typography>
-                        <img src={ToDoImg} style={{ maxWidth: '30px' }} alt="Todo" />
-                    </CardContent>
-                </Card>
-            </Grid>
-            <Grid item xs={6}>
+            </Grid> */}
+            <Grid item xs={6} className="animated-grid">
                 <Card onClick={redirectToFetchlist} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
                     <CardContent style={{ display: 'flex', alignItems: 'center' }}>
                         <Typography variant="h6" style={{ marginRight: '10px' }}>
-                            Fechlist
+                            Listado de convenios
                         </Typography>
-                        <img src={FetchlistImg} style={{ maxWidth: '30px' }} alt="Fetchlist" />
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs={6} className="animated-grid">
+                <Card onClick={redirectToUNLaR} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
+                    <CardContent style={{ display: 'flex', alignItems: 'center' }}>
+                        <Typography variant="h6" style={{ marginRight: '10px' }}>
+                            Página de UNLaR
+                        </Typography>
                     </CardContent>
                 </Card>
             </Grid>
