@@ -1,2 +1,1 @@
-export const BASE_URL = "./mock" //"https://pokeapi.co/api/v2"
-export const IMG_URL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full"
+export const BASE_URL = "https://convenios.unlar.edu.ar/convenios/1.0/rest/convenios"
