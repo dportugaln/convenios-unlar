@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BASE_URL } from '../../constants/Index';
+import { API_URL } from '../../constants/Index';
 import '../../App.css';
 import {
   Accordion,
@@ -40,7 +40,7 @@ const DocumentTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(BASE_URL, {
+        const response = await fetch(API_URL, {
           headers: {
             'Authorization': 'Basic ' + btoa('react_user:nuevaClave'),
             'Content-Type': 'application/json',
