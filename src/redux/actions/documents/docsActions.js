@@ -1,4 +1,4 @@
-import { getDocs, getDoc } from "../../../api";
+import { getDocs, /* getDoc */ } from "../../../api";
 import { setOperationResult, setAlertMsg, setAlertOpen, setAlertType } from '../../appRedux';
 
 export const GET_ALL_DOCS = 'GET_ALL_DOCS'
@@ -6,7 +6,7 @@ export const GET_DOC = 'GET_DOC';
 
 // Actions creator
 const getDocsAction = (docs) => ({type: GET_ALL_DOCS, payload: docs});
-const getDocAction = (doc) => ({ type: GET_DOC, payload: doc } );
+// const getDocAction = (doc) => ({ type: GET_DOC, payload: doc } );
 
 // Async actions
 export const allDocs = () => {
@@ -21,7 +21,7 @@ export const allDocs = () => {
   }
 }
 
-export const getDocId = (id) => {
+/* export const getDocId = (id) => {
   return async dispatch => {
     try {
       const doc = await getDoc(id)
@@ -31,3 +31,4 @@ export const getDocId = (id) => {
     }
   }
 }
+ */
