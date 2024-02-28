@@ -1,4 +1,4 @@
-/* const API_URL = 'https://convenios.unlar.edu.ar/convenios/1.0/rest/convenios';
+const API_URL = "./kakan2.unlar.edu.ar.json";
 
 export const getDocs = async () => {
   try {
@@ -18,7 +18,7 @@ export const getDoc = async (id) => {
   }
 }
 
-export const createDoc = async (docData) => {
+/* export const createDoc = async (docData) => {
   try {
     const res = await fetch(`${API_URL}/docs`, {
       method: 'POST',
@@ -62,7 +62,7 @@ export const deleteDoc = async (id) => {
 } */
 
 
-const API_URL = "https://convenios.unlar.edu.ar/convenios/1.0/rest/convenios";
+/* const API_URL = "https://convenios.unlar.edu.ar/convenios/1.0/rest/convenios";
 const API_USERNAME = "react_user";
 const API_PASSWORD = "nuevaClave";
 
@@ -87,7 +87,7 @@ export const getDocs = async () => {
     throw new Error(err.message);
   }
 };
-
+ */
 /* export const getDoc = async (id) => {
   try {
     const res = await fetch(`${API_URL}/${id}`, {

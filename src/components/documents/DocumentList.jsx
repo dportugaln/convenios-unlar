@@ -71,13 +71,21 @@ const TablenNotes = () => {
   return (
     <>
 
-      <Table size="small">
+{/*       <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>Detalle</TableCell>
             <TableCell>Descripción</TableCell>
             <TableCell>Institución</TableCell>
             <TableCell>Fecha finalización</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody> */}
+        <Table size="small">
+        <TableHead>
+          <TableRow>
+            <TableCell>Código</TableCell>
+            <TableCell>Denominación</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -89,12 +97,18 @@ const TablenNotes = () => {
 
               :
 
-              docs.map((row) => (
+/*               docs.map((row) => (
                 <TableRow key={row._id}>
                   <TableCell>{row.detalle_convenio}</TableCell>
                   <TableCell>{row.descripcion_convenio}</TableCell>
                   <TableCell>{row.institucion_denominacion}</TableCell>
                   <TableCell>{row.fecha_finalizacion}</TableCell>
+                </TableRow>
+              )) */
+              docs.map((row) => (
+                <TableRow key={row.codigo}>
+                  <TableCell>{row.codigo}</TableCell>
+                  <TableCell>{row.denominacion}</TableCell>
                 </TableRow>
               ))
 
