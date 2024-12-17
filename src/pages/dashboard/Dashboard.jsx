@@ -32,7 +32,7 @@ const Dashboard = () => {
             {/* Heading */}
             <Grid item xs={12}>
             <Typography variant="h2" gutterBottom style={headingStyle}>
-                    Gestión de Convenios
+                    PACTO
                 </Typography>
                 <Divider style={{ backgroundColor: "white", height: 2, margin:"0 auto" }}/>
                 <Typography variant="h4" style={headingStyle}>
@@ -44,7 +44,7 @@ const Dashboard = () => {
                 <Card className="animated-card">
                     <CardContent>
                         <Typography variant="h5" gutterBottom>
-                            Bienvenidos al Sistema de Gestión de Convenios de la UNLaR
+                            Bienvenidos a la Plataforma de Administración de Convenios para la Transparencia Organizacional de la UNLaR
                         </Typography>
                         <Typography>
                         Esta plataforma está diseñada para promover la transparencia institucional y brindar acceso a valiosas

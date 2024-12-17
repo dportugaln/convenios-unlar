@@ -38,31 +38,6 @@ const DocumentTable = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
- /*  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(API_URL, {
-          headers: {
-            'Authorization': 'Basic ' + btoa('react_user:nuevaClave'),
-            'Content-Type': 'application/json',
-          },
-        });
-
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-
-        const jsonData = await response.json();
-        console.log('jsonData:', jsonData);
-        setData(jsonData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []); */
-
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
     setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
