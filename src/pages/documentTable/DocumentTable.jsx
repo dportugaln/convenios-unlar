@@ -24,7 +24,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
 
 const DocumentTable = () => {
-  const [data, setData] = useState(jsonData);
+  const [data, setData] = useState([]);
   const [filters, setFilters] = useState({
     detalle_convenio: '',
     descripcion_convenio: '',
@@ -37,6 +37,33 @@ const DocumentTable = () => {
   const [searchText, setSearchText] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+
+  const fetchData = async () => {
+    const url = '/convenios/1.0/rest/convenios';
+
+    const options = {
+      method: 'GET',
+      headers: {
+        Authorization: 'Basic cmVhY3RfdXNlcjpudWV2YUNsYXZl',
+      },
+    };
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) throw new Error('Error al obtener datos de la API');
+      const apiData = await response.json();
+
+      // Ajusta los datos si es necesario, aquí se usa "setData"
+      setData(apiData);
+    } catch (error) {
+      console.error('Error:', error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;

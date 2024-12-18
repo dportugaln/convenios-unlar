@@ -23,7 +23,7 @@ import { drawerMenu, popMenu } from '../../constants/Menu'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import UnlarImg from '../../assets/images/UNLaR.jpg'
+import UnlarImg from '../../assets/images/unlar.jpg'
 
 /* const drawerWidth = 240;
 
