@@ -1,22 +1,22 @@
-export const API_URL = "./data.json"
-//const API_URL = "http://kakan2.unlar.edu.ar/kakan/?ai=kakan||3640&cl=leo&ua=UNLAR";
-// const API_USERNAME = process.env.API_USERNAME;
-// const API_PASSWORD = process.env.API_PASSWORD;
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+const AUTH_HEADER = { Authorization: process.env.REACT_APP_API_AUTH };
 
-export const getConvenios = async () => {
-    try {
-      const res = await fetch(`${API_URL}`);
-      return res.json();
-    } catch (err) {
-      throw new Error(err)
+export const fetchConvenios = async () => {
+  const url = `${API_BASE_URL}/convenios`;
+
+  const options = {
+    method: 'GET',
+    headers: AUTH_HEADER,
+  };
+
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error('Error al obtener datos de convenios');
     }
+    return await response.json();
+  } catch (error) {
+    console.error('API Error:', error.message);
+    throw error;
   }
-  
-  export const getConvenio = async (id) => {
-    try {
-      const res = await fetch(`${API_URL}/${id}`);
-      return res.json();
-    } catch (err) {
-      throw new Error(err)
-    }
-  }
+};
