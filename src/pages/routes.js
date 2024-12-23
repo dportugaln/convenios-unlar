@@ -11,7 +11,7 @@ const Routes = () => {
         element: <DashboardLayout />,
         children: [
           { path: "", element: <Dashboard /> },
-          { path: "document-table", element: <DocumentTable />},
+          { path: "listado", element: <DocumentTable />},
         ],
       },
       { path: "/404", element: <NotFound /> },
