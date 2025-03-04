@@ -15,7 +15,7 @@ const DashboardLayout = () => {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar sx={{ background: '#26647b' }} position="absolute">
+      <AppBar sx={{ background: '#1d5b96' }} position="absolute">
         <Toolbar sx={{
           pr: '24px',
         }}
@@ -30,7 +30,7 @@ const DashboardLayout = () => {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Sistema de gestión convenios - UNLaR
+              PACTO - UNLaR
             </Typography>
           </RouterLink>
 
