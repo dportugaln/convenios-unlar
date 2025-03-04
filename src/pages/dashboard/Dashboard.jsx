@@ -19,7 +19,7 @@ const Dashboard = () => {
     };
 
     const redirectToFetchlist = () => {
-        window.location.href = "/document-table";
+        window.location.href = "/listado";
     };
 
     const todoList = useSelector(appSelector.todo);
